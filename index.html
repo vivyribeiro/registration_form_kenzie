@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./src/assets/favicon.png" type="image/png" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<title>Código da Virada</title>
+		<script src="./src/script.js" type="text/javascript" defer></script>
+	</head>
+	<body>
+		<main>
+			<!-- FORM SECTION -->
+			<section class="main__section">
+				<div class="form__container">
+					<div class="form__header">
+						<img
+							class="form__header--img"
+							src="./src/assets/codigo_da_virada.png"
+							alt="Código da Virada"
+						/>
+						<h1 class="form__header--title">Formulário de Cadastro</h1>
+						<p class="form__header--description">
+							Seja bem vindo(a) futuro dev! Ficamos felizes pelo seu interesse
+							em nosso evento. Preencha o formulário abaixo, e nos vemos no
+							<strong>Código da Virada 2.0</strong>.
+						</p>
+					</div>
+					<form class="form__content" id="form">
+						<label for="name" class="text"
+							>Nome<span class="required__fields">&ast;</span></label
+						>
+						<input
+							id="name"
+							class="text"
+							type="text"
+							min="2"
+							placeholder="Digite seu nome aqui..."
+							required
+						/>
+
+						<label for="email" class="text"
+							>E-mail<span class="required__fields">&ast;</span></label
+						>
+						<input
+							id="email"
+							class="text"
+							type="text"
+							placeholder="Digite seu e-mail aqui..."
+							required
+						/>
+
+						<label for="description" class="text">Descrição</label>
+						<textarea
+							name="description"
+							id="description"
+							class="text"
+							placeholder="O que motivou você a participar do evento?"
+							cols="30"
+							rows="10"
+						></textarea>
+
+						<label for="modules__kenzie" class="text"
+							>Módulo<span class="required__fields">&ast;</span></label
+						>
+						<div class="select">
+							<select name="modules" id="modules__kenzie" class="text" required>
+								<option value="" class="text">Selecionar módulo</option>
+								<option value="Módulo 1" class="text">Módulo 1</option>
+								<option value="Módulo 2" class="text">Módulo 2</option>
+								<option value="Módulo 3" class="text">Módulo 3</option>
+								<option value="Módulo 4" class="text">Módulo 4</option>
+								<option value="Módulo 5" class="text">Módulo 5</option>
+								<option value="Módulo 6" class="text">Módulo 6</option>
+							</select>
+						</div>
+
+						<label for="password" class="text"
+							>Senha<span class="required__fields">&ast;</span></label
+						>
+						<input id="password" class="text" type="password" required />
+
+						<label for="confirm__password" class="text"
+							>Confirmar Senha<span class="required__fields">&ast;</span></label
+						>
+						<input
+							id="confirm__password"
+							class="text"
+							type="password"
+							required
+						/>
+
+						<span class="radio__title"
+							>Deseja receber novidades em seu e-mail?
+						</span>
+						<div class="radio__selection">
+							<label for="radio__yes" class="text">Sim</label>
+							<input
+								id="radio__yes"
+								class="text"
+								type="radio"
+								value="Sim"
+								name="radio__options"
+								checked
+							/>
+
+							<label for="radio__no" class="text">Não</label>
+							<input
+								id="radio__no"
+								class="text"
+								type="radio"
+								value="Não"
+								name="radio__options"
+							/>
+						</div>
+
+						<button
+							class="button__register text"
+							type="submit"
+							onclick="saveDataParticipant()"
+						>
+							Cadastrar
+						</button>
+						<div id="form__message"></div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

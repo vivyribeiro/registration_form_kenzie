@@ -1,0 +1,141 @@
+body {
+	font-family: sans-serif;
+	background-image: url(/src/assets/background_cv.png);
+	background-size: cover;
+}
+
+.main__section {
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem;
+}
+
+.form__container {
+	width: 50%;
+	display: grid;
+	justify-items: center;
+	padding-bottom: 3rem;
+	background-color: ghostwhite;
+	box-shadow: 0px 0px 12px rgb(52 248 0 / 78%);
+}
+
+.form__header--img {
+	width: 100%;
+}
+
+.form__header--title {
+	font-size: 2.5rem;
+	text-align: center;
+	text-decoration-line: underline;
+	text-underline-position: under;
+}
+
+.text {
+	font-size: 1.25rem;
+}
+
+.required__fields {
+	color: red;
+}
+
+.form__header--description {
+	padding: 0 2rem 2rem;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.form__content {
+	display: grid;
+	justify-items: stretch;
+	gap: 1rem;
+	width: 70%;
+}
+
+input,
+textarea,
+select {
+	background-color: white;
+	border: 3px solid black;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#description {
+	resize: none;
+}
+
+select {
+	appearance: none;
+	flex: 1;
+	cursor: pointer;
+}
+
+/* Custom Select wrapper */
+.select {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+/* Arrow */
+.select::after {
+	content: "\25BC";
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	background-color: black;
+	color: white;
+	/* transition: 0.25s all ease; */
+	pointer-events: none;
+}
+
+/* Effects */
+.select:hover::after {
+	color: black;
+	border-left: 3px solid black;
+	background-color: transparent;
+}
+
+.radio__title {
+	font-size: 1.25rem;
+	padding-top: 1rem;
+}
+
+.radio__selection {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+}
+
+#radio__yes,
+#radio__no {
+	margin-right: 1.5rem;
+	accent-color: black;
+	width: 25px;
+	height: 25px;
+}
+
+.button__register.text {
+	color: white;
+	background-color: black;
+	text-align: center;
+	padding: 0.75rem;
+	cursor: pointer;
+}
+
+.button__register.text:hover {
+	color: black;
+	background-color: white;
+	border: 3px solid black;
+}
+
+#form__message {
+	font-size: 1.25rem;
+	text-align: center;
+	padding-top: 0.75rem;
+}
