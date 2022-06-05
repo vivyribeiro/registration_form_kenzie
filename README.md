@@ -3,7 +3,7 @@
 ## 🎯 Projeto
 
 <br>
-O projeto foi baseado numa atividade da Kenzie Academy na **Sprint 1** do **Módulo 1** do curso. A atividade consiste em construir um formúlario em que alguns campos deveriam ser obrigatoriamente preenchidos pelo participante, a notificação sobre essa condição é feita atravéz dum aviso no proprio campo e visualmente por meio desse asterisco <span style = "color:red"> \* </span> nos respectivos campos, somente com o preenchimento desses campos, será permitido o cadastro.
+O projeto foi baseado numa atividade da Kenzie Academy na **Sprint 1** do **Módulo 1** do curso. A atividade consiste em construir um formúlario em que alguns campos deveriam ser obrigatoriamente preenchidos pelo participante, a notificação sobre essa condição é feita atravéz dum aviso no proprio campo e visualmente por meio desse asterisco <span style = "color:red"> * </span> nos respectivos campos, somente com o preenchimento desses campos, será permitido o cadastro.
 
 <br>
 
